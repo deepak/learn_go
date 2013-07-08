@@ -41,3 +41,26 @@ go run hello.go
 # list of community code 
 
 # installing code (go get)
+
+## Questions
+
+Programs start running in package main.
+
+import (
+    "fmt"
+    "math"
+)
+fmt.Println("Happy", math.Pi, "Day")
+like a ruby module function. not like include ie. still has seperate namespace
+
+By convention, the package name is the same as the last element of the import path.
+
+List names exported by a package
+
+After importing a package, you can refer to the names it exports.
+In Go, a name is exported if it begins with a capital letter.
+Foo is an exported name, as is FOO. The name foo is not exported.
+
+
+
+ 
