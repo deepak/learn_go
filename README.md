@@ -11,6 +11,15 @@ http://golang.org/doc/install#gopath
 Code installed with homebrew have their bins in PATH 
 so that was also not needed
 
+mercurial (hg) is needed for `go get`
+might use svn, hg, git or bzr
+where is this config set in packages ?
+https://code.google.com/p/go-wiki/wiki/GoGetTools
+
+> go get code.google.com/p/go-tour/gotour
+go: missing Mercurial command. See http://golang.org/s/gogetcmd
+package code.google.com/p/go-tour/gotour: exec: "hg": executable file not found in $PATH
+
 ## GOPATH
 http://golang.org/doc/code.html#GOPATH
 
@@ -26,7 +35,6 @@ Can set GOPATH to
 export GOPATH="/usr/local/var/go"
 
 CHECK: It can be colon seperated if multiple paths are to be specified
-CHECK: ig hg is needed for `go get`. I had hg installed previously
 
 ## Folder structure for packages
 
@@ -38,9 +46,20 @@ go run hello.go
 
 ## package manager aka rubygems ?
 
+# warnings
+
+importing a package but not using it will throw a warning
+TODO: automatically collect a list of such warnings in a csv. maybe driven via tests
+
 # list of community code 
 
 # installing code (go get)
+
+
+## comparisons with Ruby
+
+no implicit returns like ruby
+semicolons can be used as terminators. but is not necessary
 
 ## Questions
 
@@ -61,6 +80,17 @@ After importing a package, you can refer to the names it exports.
 In Go, a name is exported if it begins with a capital letter.
 Foo is an exported name, as is FOO. The name foo is not exported.
 
+func add(x int, y int) int {
+}
+to define a function. why not keep it like c ?
 
+emacs mode for go ?
 
- 
+import (
+    "fmt"
+    "math"
+)
+what internal data-structure is that ?
+
+TDD in go. what is the culture regarding tests in the community ?
+
