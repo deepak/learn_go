@@ -36,6 +36,16 @@ export GOPATH="/usr/local/var/go"
 
 CHECK: It can be colon seperated if multiple paths are to be specified
 
+## emacs setup
+
+install go-mode
+
+## REPL
+
+seems like go does not provide a shell, even though there is a sandbox on the website
+http://stackoverflow.com/questions/8513609/does-go-provide-repl
+https://groups.google.com/forum/#!topic/golang-nuts/0o6sBNl1abY
+
 
 ## terminology
 
