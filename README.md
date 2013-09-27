@@ -46,6 +46,12 @@ seems like go does not provide a shell, even though there is a sandbox on the we
 http://stackoverflow.com/questions/8513609/does-go-provide-repl
 https://groups.google.com/forum/#!topic/golang-nuts/0o6sBNl1abY
 
+## Missing Ruby
+1. REPL
+2. begin-end blocks
+
+Explicit erorr checks also seem like line-noise
+but have to try splitting code into smaller functions
 
 ## terminology
 
