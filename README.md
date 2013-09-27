@@ -36,6 +36,13 @@ export GOPATH="/usr/local/var/go"
 
 CHECK: It can be colon seperated if multiple paths are to be specified
 
+
+## terminology
+
+- packages
+- functions take parameters
+- 
+
 ## Folder structure for packages
 
 TODO: http://golang.org/doc/code.html#PackagePaths
@@ -83,6 +90,7 @@ Foo is an exported name, as is FOO. The name foo is not exported.
 func add(x int, y int) int {
 }
 to define a function. why not keep it like c ?
+TODO: read http://golang.org/doc/articles/gos_declaration_syntax.html
 
 emacs mode for go ?
 
@@ -93,4 +101,14 @@ import (
 what internal data-structure is that ?
 
 TDD in go. what is the culture regarding tests in the community ?
+
+how to find type of a variable ? and list of types in golang
+reflection in go. variables/types in current scope ?
+any type for "result parameter" in http://tour.golang.org/#9
+
+what is `:=`
+  a, b := swap("hello", "world")
+
+return_all.go: do not care about unused variables
+otherwise program does not run
 
